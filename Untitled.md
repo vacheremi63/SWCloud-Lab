@@ -140,7 +140,7 @@ i.	Tags: The custom tags currently associated with an alert. This also allows yo
 10.	Comments: Allows you to enter any related or relevant comments or information about the Alert, as well as provides updates about when additional related Observations are added.
 Interacting with Supporting Observations
 Supporting Observations for an Alert contain a lot of useful data to drill into. The information presented will vary based on the kind of Observation, but in general there will be Source and Connected IP information displayed, as well as the Time the observation was registered. Other relevant details about the activity are displayed as well.  Note the connected IP is not always the source; Stealthwatch Cloud does not make that distinction.
-1.	# records per page specifies the number of Observations you would like to display at once.
+1.	X records per page specifies the number of Observations you would like to display at once.
 2.	The Search field:  Allows you to search for something in the specific lists of Observations.  In this example, you could filter on all SSH Server profiles by typing it into the box.
 3.	CSV: Allows you to export all Observations in the table as a .CSV formatted file.
 
@@ -431,7 +431,7 @@ Syslog or SNMP
 4.	Select the SNMP tab to configure SNMP reporting functionality.
 
   ![](63.jpg)
-  
+
 5.	Click Close. You are done.
  
 
