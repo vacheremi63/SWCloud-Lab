@@ -89,11 +89,11 @@ The 60-plus built-in alerts each have a default sensitivity level that can be ad
  
 	a.	Status: the alert’s workflow status assigned by users, including: 
 
- <img src="14.jpg" width="400" height="200" />
+ <img src="14.jpg" width="300" height="150" />
 
 		i.	All: Display all Alerts triggered in your environment, regardless of status.
 
- ![](15.jpg)
+ <img src="15.jpg" width="300" height="150" />
 
 		ii.	Open: Display all currently triggered Alerts that have not been closed or snoozed.
 
