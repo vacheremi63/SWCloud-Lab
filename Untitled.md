@@ -47,14 +47,13 @@ The Stealthwatch Cloud Portal is your entry point to Stealthwatch Cloud, and is 
  
 3.	Select the cloud Icon (![](Picture7.jpg)) to see all sensors that are active for this portal, Sensor can be on-premises, collecting flows from switches and routers, or API integrations with cloud providers like AWS.  Different functionality is available for the various sensor types.  The on-premises sensor allows you to configure flow input type, Syslog output, name, etc.  The cloud integrations do not have these fields as they are using the respective API.
 
-![](Picture8.jpg)
+![](picture8.jpg)
 
   For example, in AWS the flow type must be VPC flow logs, and the name of the sensor is always the name of the VPC flow log from their account.  Any changes to the cloud sensor would be done on the Integrations page.
 
- ![](Picture9.jpg)
+ ![](picture9.jpg)
 
-
-                                                                            
+                                                                          
 
 4.	Select (?) > Subnet Report to see all subnets and their associated traffic metrics, . This is useful to see if you are collecting traffic for all customer subnets and if the endpoints match the customer expectations.
 
