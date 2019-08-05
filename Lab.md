@@ -335,25 +335,25 @@ Select > Integrations to review what is needed to setup the integration with AWS
 
   ![](40.jpg)
 
-1.	To setup Stealthwatch Cloud to monitor an account, the following is required: 
+1.	To setup Stealthwatch Cloud to monitor an account, the following is required
 
-	    a.	Create a policy with the appropriate permissions, as detailed on the About tab for AWS.
+a.	Create a policy with the appropriate permissions, as detailed on the About tab for AWS.
 
-        ![](41.jpg)
+![](41.jpg)
 
-	    b.	Create a role (e.g. user) for Stealthwatch Cloud and link to the previously created policy.
+b.	Create a role (e.g. user) for Stealthwatch Cloud and link to the previously created policy.
 
-	    c.	Select the Credentials tab.
+c.	Select the Credentials tab.
 
-	    d.	Enter the Role ARN (Amazon Resource Name) into the Stealthwatch portal.
+d.	Enter the Role ARN (Amazon Resource Name) into the Stealthwatch portal.
 
-        ![](42.jpg)
+![](42.jpg)
 
-	    e.	Select the VPC Flow Logs tab.
+e.	Select the VPC Flow Logs tab.
 
-	    f.	Enter the Flow Log name in the CloudWatch Logs Group field, then click Add. The users should have VPC flow logs enabled in their account
+f.	Enter the Flow Log name in the CloudWatch Logs Group field, then click Add. The users should have VPC flow logs enabled in their account
 
-        ![](43.jpg)
+![](43.jpg)
 
 2.	 The Permissions tab allows you to see the granted permissions for the role.
 
