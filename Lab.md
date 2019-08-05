@@ -94,6 +94,7 @@ The 60-plus built-in alerts each have a default sensitivity level that can be ad
     
     *   All: Display all Alerts triggered in your environment, regardless of status.
 
+
     <img src="15.jpg" width="150" height="150" />
 
 	*   Open: Display all currently triggered Alerts that have not been closed or snoozed.
@@ -104,15 +105,15 @@ The 60-plus built-in alerts each have a default sensitivity level that can be ad
  
 	b.	Tags: View Alerts with custom descriptions that you create to track and organize Alerts.
 
-    ![](16.jpg)
+    <img src="16.jpg" width="500" height="500" />
 
 	c.	Assignee: View Alerts assigned to the specified user for investigation/remediation.
 
-    ![](17.jpg)
+     <img src="17.jpg" width="500" height="500" />
 
 	d.	Sort: View the selected alerts by newest, oldest, type, or source of Alert.
 
-    ![](18.jpg)
+     <img src="18.jpg" width="500" height="500" />
 
  
 4.	For this exercise, make sure the Alerts list displays only Open Alerts, sorted by Newest. 
