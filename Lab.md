@@ -36,15 +36,15 @@ The Stealthwatch Cloud Portal is your entry point to Stealthwatch Cloud, and is 
     
     ![](Picture2.jpg)
 
-*NOTE: The Alerts displayed on the dashboard will vary based on occurring activity in the demo environment.*
+    *NOTE: The Alerts displayed on the dashboard will vary based on occurring activity in the demo environment.*
 
     b.	The past 30 days’ worth of total endpoint counts for all deployed sensors connected to the account. 
 
- ![](Picture3.jpg)
+    ![](Picture3.jpg)
 
 	c.	The traffic summary for all endpoints for last 24 hours, and sources of that traffic:
 
- ![](Picture6.jpg)
+    ![](Picture6.jpg)
 
 
  
