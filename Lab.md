@@ -284,7 +284,7 @@ The Models tab contains several functions, such as reporting on endpoints, traff
 
 	Additionally, you can Copy the device IP or name into the clipboard for pasting elsewhere.
 
-  ![](35.jpg)
+     <img src="35.jpg" width="300" height="300" />
 
 7.	Feel free to explore other detected roles and the devices associated with them.
 
@@ -337,23 +337,23 @@ Select > Integrations to review what is needed to setup the integration with AWS
 
 1.	To setup Stealthwatch Cloud to monitor an account, the following is required: 
 
-	a.	Create a policy with the appropriate permissions, as detailed on the About tab for AWS.
+	    a.	Create a policy with the appropriate permissions, as detailed on the About tab for AWS.
 
-  ![](41.jpg)
+        ![](41.jpg)
 
-	b.	Create a role (e.g. user) for Stealthwatch Cloud and link to the previously created policy.
+	    b.	Create a role (e.g. user) for Stealthwatch Cloud and link to the previously created policy.
 
-	c.	Select the Credentials tab.
+	    c.	Select the Credentials tab.
 
-	d.	Enter the Role ARN (Amazon Resource Name) into the Stealthwatch portal.
+	    d.	Enter the Role ARN (Amazon Resource Name) into the Stealthwatch portal.
 
-  ![](42.jpg)
+        ![](42.jpg)
 
-	e.	Select the VPC Flow Logs tab.
+	    e.	Select the VPC Flow Logs tab.
 
-	f.	Enter the Flow Log name in the CloudWatch Logs Group field, then click Add. The users should have VPC flow logs enabled in their account
+	    f.	Enter the Flow Log name in the CloudWatch Logs Group field, then click Add. The users should have VPC flow logs enabled in their account
 
-  ![](43.jpg)
+        ![](43.jpg)
 
 2.	 The Permissions tab allows you to see the granted permissions for the role.
 
@@ -368,19 +368,33 @@ Select > Integrations to review what is needed to setup the integration with AWS
 ## AWS Specific Alerts
 
 *	AWS Config Rule Violation | Normal priority – An AWS Config rule was violated. This alert requires 0 days of history.
+
 *	AWS Console Login Failures | Normal priority – A user tried and failed to log in to the AWS Console several times. This alert requires 0 days of history.
+
 *	AWS Inspector Finding | Normal priority – AWS Inspector reported a high-severity finding for the device. This alert requires 0 days of history.
+
 *	AWS Lambda Invocation Spike | Normal priority – A Lambda function was invoked a record number of times. This alert requires 14 days of history.
+
 *	AWS Multifactor Authentication Change | Normal priority – Multifactor authentication was removed from a user account. This alert requires 0 days of history.
+
 *	AWS Overlapping Subnet | Normal priority – A new AWS subnet has a CIDR that overlaps an existing subnet. This is a violation of Amazon best practices. This alert requires 0 days of history.
+
 *	AWS Root Account Used | Normal priority – An action was performed using the AWS root account. This alert requires 0 days of history.
+
 *	CloudTrail Watchlist Hit | Normal priority – AWS CloudTrail reported an event on a user-supplied watchlist. This alert requires 0 days of history.
+
 *	Geographically Unusual Remote Access | Normal priority – Source has been accessed from a remote host in a country that doesn't normally access the local network. For example, a local server accepting an SSH connection from a foreign source would trigger this alert. This alert requires 14 days of history.
+
 *	New AWS Region | Normal priority – An AWS resource was detected in a previously unused region. This alert requires 0 days of history.
+
 *	New AWS Route53 Target | Normal priority – A new AWS Route53 resource record was assigned to a device that was not previously associated with a Route53 resource record. This alert requires 0 days of history.
+
 *	Stale AWS Access Key | Normal priority – AWS IAM access key exceeded the configurable age. This alert requires 30 days of history.
+
 *	Permissive AWS S3 Access Control List | Normal priority – A new ACL has been created that allows permissive access to an S3 bucket. This may be a misconfiguration, and might lead to unauthorized access to stored data. This alert requires 0 days of history.
+
 *	Permissive AWS Security Group Created | Normal priority – A new AWS security group has been created that allows access from any host on unsafe ports. This alert requires 0 days of history.
+
 *	Unused AWS Resource | Normal priority – No recent activity has been seen for this AWS resource. This alert requires 14 days of history.
 CloudTrail Watchlist 
 
@@ -393,7 +407,6 @@ You can build watchlists for any specific actions you want to be notified about.
 
 ![](46.jpg)
  
-
 
 ## Scenario 7.	Alert Customization
 
