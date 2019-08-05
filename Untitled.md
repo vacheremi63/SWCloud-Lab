@@ -1,7 +1,8 @@
-##Cisco Stealthwatch Cloud Demo 
+## Cisco Stealthwatch Cloud Demo 
 
 
 Cisco Stealthwatch Cloud provides comprehensive network visibility and security threat detection from the datacenter to the cloud. It is composed of two products: PCM (Public Cloud Monitoring) and PNM (Private Network Monitoring). Cisco Stealthwatch Cloud is primarily different from Stealthwatch Enterprise in that it is a SaaS service leveraging the public cloud for analytics, storage, and  portal access. Both products are based on using collected network telemetry to provide visibility into advanced threats by identifying suspicious patterns of traffic and host behavior deviations.
+
 Public Cloud Monitoring
 *	Simplify security efforts and gain complete visibility in public cloud environments.
 *	Provide a cloud platform-agnostic solution, using APIs in Amazon Web Services, Google Cloud Platform, and Microsoft Azure to collect network telemetry.  
@@ -15,11 +16,11 @@ Private Network Monitoring
 *	Competes with Stealthwatch Enterprise, better for customers who prefer SaaS or a simpler solution.  Stealthwatch Coud has less tunability but is simpler to configure and operate.
 
 
-#Topology
+# Topology
 This content includes preconfigured users and components to illustrate the scripted scenarios and features of the solution. Most components are fully configurable with predefined administrative user accounts. You can see the IP address and user account credentials to use to access a component by clicking the component icon in the Topology menu of your active session and in the scenario steps that require their use. The dCloud environments contains API integrations to AWS, Google Cloud Platform, and Microsoft Azure. It receives flow data from on-premises network sensors and Kubernetes clusters.
  
 
-#Scenario 1.	Portal Overview
+# Scenario 1.	Portal Overview
 The Stealthwatch Cloud Portal is your entry point to Stealthwatch Cloud, and is where you begin drilling down into the alerts, observations and other information collected for a given deployment.
 Steps
 1.	When logging in, you are initially brought to the portal dashboard page. You can always return to it by selecting Dashboard > Dashboard.
