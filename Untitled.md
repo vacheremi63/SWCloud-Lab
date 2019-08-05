@@ -22,7 +22,7 @@ This content includes preconfigured users and components to illustrate the scrip
 
 # Scenario 1.	Portal Overview
 The Stealthwatch Cloud Portal is your entry point to Stealthwatch Cloud, and is where you begin drilling down into the alerts, observations and other information collected for a given deployment.
-Steps
+**Steps**
 1.	When logging in, you are initially brought to the portal dashboard page. You can always return to it by selecting Dashboard > Dashboard.
 
 ![](Picture1.jpg)
@@ -33,7 +33,7 @@ a.	The most recent open Alerts raised by Stealthwatch Cloud:
 
 ![](Picture2.jpg)
 
-NOTE: The Alerts displayed on the dashboard will vary based on occurring activity in the demo environment.
+*NOTE: The Alerts displayed on the dashboard will vary based on occurring activity in the demo environment.*
 b.	The past 30 days’ worth of total endpoint counts for all deployed sensors connected to the account. 
 
  ![](Picture3.jpg)
@@ -70,14 +70,14 @@ Stealthwatch Cloud has over 60 built-in alerts. Alerts gradually enable during t
 
 The 60-plus built-in alerts each have a default sensitivity level that can be adjusted by the user. Changing the sensitivity to a higher level will allow more of those alert types to fire. Users are not able to change the underlying detection for the alert. This is built into the Stealthwatch Cloud analytics engine. 
 
-Steps
+**Steps**
 1.	The Stealthwatch Cloud dashboard displays the most recently triggered alerts. Select Alerts to view ALL open Alerts.
 
  ![](12.jpg)
 
   
 2.	A list of all current Open alerts is displayed.
-NOTE: The alerts in dCloud are dynamic and some of the underlying flow data may age out over time.  Alerts are never deleted.
+*NOTE: The alerts in dCloud are dynamic and some of the underlying flow data may age out over time.  Alerts are never deleted.*
 
  ![](13.jpg)
 
@@ -114,7 +114,7 @@ d.	Sort: View the selected alerts by newest, oldest, type, or source of Alert.
 4.	For this exercise, make sure the Alerts list displays only Open Alerts, sorted by Newest. 
 
 5.	Select one of the top alerts displayed on the screen, and click it.
-NOTE: The current Open Alerts displayed here will vary. We will be covering how to read and interact with Alerts in general, so any selection will do.
+*NOTE: The current Open Alerts displayed here will vary. We will be covering how to read and interact with Alerts in general, so any selection will do.*
 
 6.	The details screen will open for the selected Alert.
 
@@ -146,12 +146,12 @@ Supporting Observations for an Alert contain a lot of useful data to drill into.
 
  ![](20.jpg)
  
-NOTE: The kinds of Observations and fields displayed will vary depending on the Alert you are investigating.
+*NOTE: The kinds of Observations and fields displayed will vary depending on the Alert you are investigating.*
 4.	Clicking on an Observation’s Time will open the session information screen, showing all related network activity for that Observation’s entry.
 
   ![](21.jpg)
 
-NOTE: You can return to the alarm you selected by clicking Back in your browser.
+*NOTE: You can return to the alarm you selected by clicking Back in your browser.*
 5.	Click the down-arrow ( ) icon beside a Source IP/Name to drill down into additional reports for that device. This includes:
 a.	Alerts currently involving the selected device
 b.	Observations involving the selected device
@@ -161,7 +161,7 @@ d.	All Session Traffic related to the selected device
 
   ![](22.jpg)
 
-NOTE: You can return to the alarm you selected by clicking Back in your browser.
+*NOTE: You can return to the alarm you selected by clicking Back in your browser.*
 6.	Click the down-arrow ( ) icon beside a Connected IP to drill into additional reports, as well as pivot out for additional context for the host. This includes:
 a.	IP Traffic: Displays an overview of network traffic the IP address has been involved in, including amounts of data, internal entities it connected to, and the ports used in communication
 b.	Session Traffic: All network traffic related to the selected IP
@@ -172,7 +172,7 @@ e.	Find IP on multiple days: View the amount of traffic and the number of connec
   ![](23.jpg)
 
 7.	Feel free to explore other Alerts triggered in the demo system.
-NOTE: It is recommended that you investigate several different Alerts to get an idea of the kinds of Observations that can trigger an Alert, as well as the kind of information that is collected and analyzed by Stealthwatch Cloud as part of its operation.
+*NOTE: It is recommended that you investigate several different Alerts to get an idea of the kinds of Observations that can trigger an Alert, as well as the kind of information that is collected and analyzed by Stealthwatch Cloud as part of its operation.*
 
 
 
@@ -180,7 +180,7 @@ NOTE: It is recommended that you investigate several different Alerts to get an 
 Observations are the building blocks of Alerts. An Observation is simply a fact about the traffic that was recorded. Stealthwatch Cloud has many different Observation types. 
 The vast majority of Observations are NOT attached to an Alert. Observations are not, by default, bad. They are neutral on their own but can be indicative of bad behavior; if so, the triggered Alert will reference the concerning Observation. For example, a new high-throughput connection to an Akamai stream server is not necessarily relevant to security and will only be noted. However, a new or persistent high-throughput connection to a known or suspected Command & Control server would be. 
 An Alert is generated when combinations of observations represent a security concern.
-Steps
+**Steps**
 1.	Click Observations to access the page.
 
    ![](24.jpg)
@@ -212,7 +212,7 @@ a.	Click the right ( ) icon to view all Observations of the specified type.
 
 # Scenario 4.	Stealthwatch Cloud Models
 The Models tab contains several functions, such as reporting on endpoints, traffic, and subnets, or viewing detailed flow records query (Session Traffic). Portions of the reported endpoint and traffic information are presented on the initial Dashboard. For this section, we will look more closely at Roles.
-Steps
+**Steps**
 1.	Select Models to see the various models aggregated by Stealthwatch Cloud.
 
   ![](31.jpg)
@@ -222,7 +222,7 @@ Steps
   ![](32.jpg)
 
 3.	This displays a mix of typical LAN devices such as DNS, database servers, and Domain Controllers, as well as Amazon Resources & Instances (AWS EC2 Instance). 
-NOTE: Stealthwatch Cloud observes endpoint behavior as part of the entity modeling process to determine roles. 
+*NOTE: Stealthwatch Cloud observes endpoint behavior as part of the entity modeling process to determine roles.*
 4.	Click the plus (+) icon beside a listed role to see all devices on the network identified for the given role.
 
   ![](33.jpg)
@@ -246,13 +246,13 @@ NOTE: Stealthwatch Cloud observes endpoint behavior as part of the entity modeli
 
 # Scenario 5.	Device Models
 The Device page lists the traffic details on a given day, including internal/external connections, byte counts, open alerts and observations for the Device, the auto-identified role, and traffic profiles. Every internal listed IP in Stealthwatch Cloud has a device model page that can be used to view historical behavior data.
-Steps
+****Steps****
 1.	Select Dashboard > Dashboard to return to the main Dashboard.
 
   ![](36.jpg)
 
 2.	From the Open Alerts section of the Dashboard, click the down-arrow ( ) icon beside a device, then select Device to go to the device page.
-NOTE: Selected any listed device, as the device list varies.
+*NOTE: Selected any listed device, as the device list varies.*
 
   ![](37.jpg)
 
@@ -336,7 +336,7 @@ You can build watchlists for any specific actions you want to be notified about.
 Alert customization is not required for the service to work but can be used to achieve better alert-to-noise ratio or for customization.
 Descriptive Subnet Input 
 Labeling subnets is very useful, and recommended as a way to get added value out of the monitoring and alerts Stealthwatch Cloud provides. AWS and Google Cloud subnet info is automatically imported when integrated with Stealthwatch Cloud.
-Steps
+**Steps**
 1.	Select (  ) > Subnets.
 
    ![](48.jpg)
@@ -348,7 +348,7 @@ Steps
 3.	You have the following options to add subnets:
 a.	Click Add Subnet to manually add a subnet, or 
 b.	Click Upload CSV to import a properly formatted CSV file.
-NOTE: The system provides more information on CSV format when you click Upload CSV.
+*NOTE: The system provides more information on CSV format when you click Upload CSV.*
 
 4.	You can also define 3 attributes for a subnet:
 * a.	Sensitivity: The sensitivity of a subnet is directly related to an Alert’s sensitivity. For example, if a subnet is rated as low sensitivity, only high sensitivity Alerts will fire. If a subnet is rated as high sensitivity, low, normal, and high sensitivity Alerts will trigger. No sensitivity will keep any Alerts from triggering, and is generally not recommended.
@@ -373,7 +373,7 @@ NOTE: The system provides more information on CSV format when you click Upload C
 
 Alert Sensitivity
 There is limited customization of alerts due to the entity modeling algorithms. You can adjust the sensitivity of the alerts (normal, low, high, none). The sensitivity of the alerts is directly related to the sensitivity of the subnet. For example, if a subnet is rated as low sensitivity, only high sensitivity Alerts will fire. If a subnet is rated as high sensitivity, low, normal and high sensitivity Alerts will trigger. No sensitivity will keep any Alerts from triggering, and is generally not recommended.
-Steps
+**Steps**
 1.	Select (?) > Alert Types and Priorities.
 
   ![](52.jpg)
@@ -384,7 +384,7 @@ Steps
 
 Watchlists/Internal Blacklist
 Custom alerts and blacklists can also be defined in Stealthwatch Cloud.
-Steps
+**Steps**
 1.	Click > Alerts > Configure Watchlists to display the options available for Stealthwatch Cloud users to input their own watchlists (e.g. TOR) for additional visibility.
 
   ![](54.jpg)
