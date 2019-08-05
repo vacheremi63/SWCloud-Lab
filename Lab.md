@@ -105,15 +105,15 @@ The 60-plus built-in alerts each have a default sensitivity level that can be ad
  
 	b.	Tags: View Alerts with custom descriptions that you create to track and organize Alerts.
 
-    <img src="16.jpg" width="500" height="500" />
+    <img src="16.jpg" width="300" height="300" />
 
 	c.	Assignee: View Alerts assigned to the specified user for investigation/remediation.
 
-     <img src="17.jpg" width="500" height="500" />
+     <img src="17.jpg" width="300" height="300" />
 
 	d.	Sort: View the selected alerts by newest, oldest, type, or source of Alert.
 
-     <img src="18.jpg" width="500" height="500" />
+     <img src="18.jpg" width="300" height="300" />
 
  
 4.	For this exercise, make sure the Alerts list displays only Open Alerts, sorted by Newest. 
@@ -186,7 +186,7 @@ Supporting Observations for an Alert contain a lot of useful data to drill into.
 
 	Additionally, you can Copy the device IP or name into the clipboard for pasting elsewhere.
 
-![](22.jpg)
+     <img src="22.jpg" width="300" height="300" />
 
 *NOTE: You can return to the alarm you selected by clicking Back in your browser.*
 
@@ -203,7 +203,7 @@ Supporting Observations for an Alert contain a lot of useful data to drill into.
 	e.	Find IP on multiple days: View the amount of traffic and the number of connections this entity was involved with per day, over the past 30 days
 
 
-![](23.jpg)
+     <img src="23.jpg" width="300" height="300" />
 
 7.	Feel free to explore other Alerts triggered in the demo system.
 
