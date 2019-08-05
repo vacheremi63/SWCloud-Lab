@@ -1,4 +1,4 @@
-*** Cisco Stealthwatch Cloud Demo ***
+# Cisco Stealthwatch Cloud Demo ***
 
 
 Cisco Stealthwatch Cloud provides comprehensive network visibility and security threat detection from the datacenter to the cloud. It is composed of two products: PCM (Public Cloud Monitoring) and PNM (Private Network Monitoring). Cisco Stealthwatch Cloud is primarily different from Stealthwatch Enterprise in that it is a SaaS service leveraging the public cloud for analytics, storage, and  portal access. Both products are based on using collected network telemetry to provide visibility into advanced threats by identifying suspicious patterns of traffic and host behavior deviations.
@@ -16,13 +16,15 @@ Private Network Monitoring
 *	Competes with Stealthwatch Enterprise, better for customers who prefer SaaS or a simpler solution.  Stealthwatch Coud has less tunability but is simpler to configure and operate.
 
 
-# Topology
+## Topology
 This content includes preconfigured users and components to illustrate the scripted scenarios and features of the solution. Most components are fully configurable with predefined administrative user accounts. You can see the IP address and user account credentials to use to access a component by clicking the component icon in the Topology menu of your active session and in the scenario steps that require their use. The dCloud environments contains API integrations to AWS, Google Cloud Platform, and Microsoft Azure. It receives flow data from on-premises network sensors and Kubernetes clusters.
  
 
-# Scenario 1.	Portal Overview
+## Scenario 1.	Portal Overview
 The Stealthwatch Cloud Portal is your entry point to Stealthwatch Cloud, and is where you begin drilling down into the alerts, observations and other information collected for a given deployment.
+
 **Steps**
+
 1.	When logging in, you are initially brought to the portal dashboard page. You can always return to it by selecting Dashboard > Dashboard.
 
 ![](Picture1.jpg)
@@ -66,7 +68,7 @@ The Stealthwatch Cloud Portal is your entry point to Stealthwatch Cloud, and is 
  ![](11.jpg)
 
  
-# Scenario 2.	Stealthwatch Cloud Alerts
+## Scenario 2.	Stealthwatch Cloud Alerts
 Stealthwatch Cloud has over 60 built-in alerts. Alerts gradually enable during the baseline period.  The full baseline period is 36 days, and alerts require various amounts of history (e.g. 0, 7, 14, and 36 days). This baseline process employs entity modeling to learn what is normal behavior for an endpoint.  A simple example is a machine that hosts remote access connections, such as Remote Desktop or SSH.  During the learning period, the model geo-codes any external IP that appears to successfully authenticate.  This allows the service to know what countries typically access the environment. If an “unusual” country authenticates this new behavior, then the service produces an Alert.  This alert, “Geographically Unusual Access,” requires 15 days of history.  Each alert will reference one or more “observations;” consider these as the evidence for the alert.  Users have access to all observations, even ones not used for alerts.  For example, if a user wanted to see all remote access sessions, not just ones to unusual countries, they could select that observation type.  More on that topic in Scenario 3.
 
 The 60-plus built-in alerts each have a default sensitivity level that can be adjusted by the user. Changing the sensitivity to a higher level will allow more of those alert types to fire. Users are not able to change the underlying detection for the alert. This is built into the Stealthwatch Cloud analytics engine. 
@@ -207,7 +209,7 @@ Supporting Observations for an Alert contain a lot of useful data to drill into.
 
 *NOTE: It is recommended that you investigate several different Alerts to get an idea of the kinds of Observations that can trigger an Alert, as well as the kind of information that is collected and analyzed by Stealthwatch Cloud as part of its operation.*
 
-# Scenario 3.	Cisco Stealthwatch Observations
+## Scenario 3.	Cisco Stealthwatch Observations
 
 Observations are the building blocks of Alerts. An Observation is simply a fact about the traffic that was recorded. Stealthwatch Cloud has many different Observation types. 
 The vast majority of Observations are NOT attached to an Alert. Observations are not, by default, bad. They are neutral on their own but can be indicative of bad behavior; if so, the triggered Alert will reference the concerning Observation. For example, a new high-throughput connection to an Akamai stream server is not necessarily relevant to security and will only be noted. However, a new or persistent high-throughput connection to a known or suspected Command & Control server would be. 
@@ -245,7 +247,7 @@ An Alert is generated when combinations of observations represent a security con
 
   ![](30.jpg)
 
-# Scenario 4.	Stealthwatch Cloud Models
+## Scenario 4.	Stealthwatch Cloud Models
 
 The Models tab contains several functions, such as reporting on endpoints, traffic, and subnets, or viewing detailed flow records query (Session Traffic). Portions of the reported endpoint and traffic information are presented on the initial Dashboard. For this section, we will look more closely at Roles.
 
@@ -287,7 +289,7 @@ The Models tab contains several functions, such as reporting on endpoints, traff
 7.	Feel free to explore other detected roles and the devices associated with them.
 
 
-# Scenario 5.	Device Models
+## Scenario 5.	Device Models
 
 The Device page lists the traffic details on a given day, including internal/external connections, byte counts, open alerts and observations for the Device, the auto-identified role, and traffic profiles. Every internal listed IP in Stealthwatch Cloud has a device model page that can be used to view historical behavior data.
 
@@ -323,7 +325,7 @@ The Device page lists the traffic details on a given day, including internal/ext
 
 10.	All recorded DNS requests and what they resolved to can be found on the DNS tab. This tab is empty if you only collect NetFlow data.
 
-# Scenario 6.	AWS Specific Instrumentation and Features
+## Scenario 6.	AWS Specific Instrumentation and Features
 
 Cisco Stealthwatch Cloud takes advance of AWS APIs and security features, and is able to pull data from additional AWS APIs like AWS CloudTrail to get additional context on the instances (servers) in the customer account.  Similar features are expected for Google Cloud and Microsoft Azure in future updates.
 
@@ -363,7 +365,7 @@ Select > Integrations to review what is needed to setup the integration with AWS
 
 5.	Cisco Stealthwatch Cloud can initiate AWS Inspector assessments and pull any generating alerts into the Cisco Stealthwatch Cloud portal by defining them on the Inspector tab. Amazon Inspector is an automated security assessment service that helps improve the security and compliance of applications deployed on AWS. Amazon Inspector automatically assesses applications for vulnerabilities or deviations from best practices. After performing an assessment, Amazon Inspector produces a detailed list of security findings prioritized by level of severity.
  
-# AWS Specific Alerts
+## AWS Specific Alerts
 
 *	AWS Config Rule Violation | Normal priority – An AWS Config rule was violated. This alert requires 0 days of history.
 *	AWS Console Login Failures | Normal priority – A user tried and failed to log in to the AWS Console several times. This alert requires 0 days of history.
@@ -393,7 +395,7 @@ You can build watchlists for any specific actions you want to be notified about.
  
 
 
-# Scenario 7.	Alert Customization
+## Scenario 7.	Alert Customization
 
 Alert customization is not required for the service to work but can be used to achieve better alert-to-noise ratio or for customization.
 Descriptive Subnet Input 
@@ -479,7 +481,7 @@ Custom alerts and blacklists can also be defined in Stealthwatch Cloud.
 
   ![](57.jpg)
 
-# Scenario 8.	Alert Export Options
+## Scenario 8.	Alert Export Options
 
 Cisco Stealthwatch Cloud can export alerts to several popular tools like Spark, Slack, PagerDuty, etc. In addition, Amazon and Google have built in notification tools like SNS that can be used to deliver alerts. The on-premises virtual appliance also has the ability to generate SNMP or Syslog data and pass it to a local collector (e.g. SIEM).
 
