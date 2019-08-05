@@ -29,16 +29,17 @@ The Stealthwatch Cloud Portal is your entry point to Stealthwatch Cloud, and is 
 
  
 2.	On the Dashboard home page, you will see:
-a.	The most recent open Alerts raised by Stealthwatch Cloud:
+	a.	The most recent open Alerts raised by Stealthwatch Cloud:
 
 ![](Picture2.jpg)
 
 *NOTE: The Alerts displayed on the dashboard will vary based on occurring activity in the demo environment.*
-b.	The past 30 days’ worth of total endpoint counts for all deployed sensors connected to the account. 
+
+	b.	The past 30 days’ worth of total endpoint counts for all deployed sensors connected to the account. 
 
  ![](Picture3.jpg)
 
-c.	The traffic summary for all endpoints for last 24 hours, and sources of that traffic:
+	c.	The traffic summary for all endpoints for last 24 hours, and sources of that traffic:
 
  ![](Picture6.jpg)
 
@@ -84,29 +85,29 @@ The 60-plus built-in alerts each have a default sensitivity level that can be ad
   
 3.	You can filter and sort displayed Alerts by different criteria. 
  
-a.	Status: the alert’s workflow status assigned by users, including: 
+	a.	Status: the alert’s workflow status assigned by users, including: 
 
  ![](14.jpg)
 
-i.	All: Display all Alerts triggered in your environment, regardless of status.
+		i.	All: Display all Alerts triggered in your environment, regardless of status.
 
  ![](15.jpg)
 
-ii.	Open: Display all currently triggered Alerts that have not been closed or snoozed.
+		ii.	Open: Display all currently triggered Alerts that have not been closed or snoozed.
 
-iii.	Closed: Display Alerts that have been closed by users. If the same behavior is detected again, the alert will most likely trigger again.
+		iii.	Closed: Display Alerts that have been closed by users. If the same behavior is detected again, the alert will most likely trigger again.
 
-iv.	Snoozed: Display Alerts “silenced” by users. When snooze is selected, the user specifies a period of time for snoozing.  When the snooze period expires, the alert could trigger again.
+		iv.	Snoozed: Display Alerts “silenced” by users. When snooze is selected, the user specifies a period of time for snoozing.  When the snooze period expires, the alert could trigger again.
  
-b.	Tags: View Alerts with custom descriptions that you create to track and organize Alerts.
+	b.	Tags: View Alerts with custom descriptions that you create to track and organize Alerts.
 
   ![](16.jpg)
 
-c.	Assignee: View Alerts assigned to the specified user for investigation/remediation.
+	c.	Assignee: View Alerts assigned to the specified user for investigation/remediation.
 
   ![](17.jpg)
 
-d.	Sort: View the selected alerts by newest, oldest, type, or source of Alert.
+	d.	Sort: View the selected alerts by newest, oldest, type, or source of Alert.
 
  ![](18.jpg)
 
@@ -121,15 +122,15 @@ d.	Sort: View the selected alerts by newest, oldest, type, or source of Alert.
   ![](19.jpg)
 
 7.	The Alert details screen displays the Name of the Alert and the associated device name/IP address. Other information provided includes:
-* a.	Status: Current Status of the Alert (Open or Closed).
-* b.	ID: Identification number of the Alert.  This is an incrementing number based on all triggered Alerts.
-* c.	Description: A description of the alert explaining what it means and why it is important.
-* d.	Updated: When the Alert most recently had activity related to it occur
-* e.	Created: When the Alert was first triggered.
-* f.	The IP addresses of all observed entities involved in the alert.
-* g.	Hostnames of the entities when the Alert triggered (if applicable/known).
-* h.	Assignee: Who the alert is assigned to. Useful for triage and tracking.
-* i.	Tags: The custom tags currently associated with an alert. This also allows you to assign custom tags to an alert for organization and tracking purposes.
+	a.	Status: Current Status of the Alert (Open or Closed).
+	b.	ID: Identification number of the Alert.  This is an incrementing number based on all triggered Alerts.
+	c.	Description: A description of the alert explaining what it means and why it is important.
+	d.	Updated: When the Alert most recently had activity related to it occur
+	e.	Created: When the Alert was first triggered.
+	f.	The IP addresses of all observed entities involved in the alert.
+	g.	Hostnames of the entities when the Alert triggered (if applicable/known).
+	h.	Assignee: Who the alert is assigned to. Useful for triage and tracking.
+	i.	Tags: The custom tags currently associated with an alert. This also allows you to assign custom tags to an alert for organization and tracking purposes.
 
 
 8.	Supporting Observations: All Alerts are based on Observations. These are the related activities that caused the alert to trigger. Depending on the type of Alert, there can be multiple kinds of Observations listed here. The associated table for each observation displays the connection details for the activity. 
@@ -138,8 +139,10 @@ d.	Sort: View the selected alerts by newest, oldest, type, or source of Alert.
 9.	Additional Observations: Lets you explore additional information and context about the device that triggered the alarm.
 
 10.	Comments: Allows you to enter any related or relevant comments or information about the Alert, as well as provides updates about when additional related Observations are added.
-Interacting with Supporting Observations
+
+**Interacting with Supporting Observations**
 Supporting Observations for an Alert contain a lot of useful data to drill into. The information presented will vary based on the kind of Observation, but in general there will be Source and Connected IP information displayed, as well as the Time the observation was registered. Other relevant details about the activity are displayed as well.  Note the connected IP is not always the source; Stealthwatch Cloud does not make that distinction.
+
 1.	X records per page specifies the number of Observations you would like to display at once.
 2.	The Search field:  Allows you to search for something in the specific lists of Observations.  In this example, you could filter on all SSH Server profiles by typing it into the box.
 3.	CSV: Allows you to export all Observations in the table as a .CSV formatted file.
@@ -147,34 +150,37 @@ Supporting Observations for an Alert contain a lot of useful data to drill into.
  ![](20.jpg)
  
 *NOTE: The kinds of Observations and fields displayed will vary depending on the Alert you are investigating.*
+
 4.	Clicking on an Observation’s Time will open the session information screen, showing all related network activity for that Observation’s entry.
 
   ![](21.jpg)
 
 *NOTE: You can return to the alarm you selected by clicking Back in your browser.*
+
 5.	Click the down-arrow ( ) icon beside a Source IP/Name to drill down into additional reports for that device. This includes:
-a.	Alerts currently involving the selected device
-b.	Observations involving the selected device
-c.	Device information, which displays information about what is known about the selected device (see Device Models for more information)
-d.	All Session Traffic related to the selected device
+	a.	Alerts currently involving the selected device
+	b.	Observations involving the selected device
+	c.	Device information, which displays information about what is known about the selected device (see Device Models for more information)
+	d.	All Session Traffic related to the selected device
 	Additionally, you can Copy the device IP or name into the clipboard for pasting elsewhere.
 
-  ![](22.jpg)
+![](22.jpg)
 
 *NOTE: You can return to the alarm you selected by clicking Back in your browser.*
-6.	Click the down-arrow ( ) icon beside a Connected IP to drill into additional reports, as well as pivot out for additional context for the host. This includes:
-a.	IP Traffic: Displays an overview of network traffic the IP address has been involved in, including amounts of data, internal entities it connected to, and the ports used in communication
-b.	Session Traffic: All network traffic related to the selected IP
-c.	AbuseIPDB, Cisco Umbrella, Google Search, or Talos Intelligence: Pivot into external data stores for additional context about the host 
-d.	Add IP to watchlist: Create a watchlist rule for the IP that will trigger an Alert when network activity is detected from it in the future
-e.	Find IP on multiple days: View the amount of traffic and the number of connections this entity was involved with per day, over the past 30 days
 
-  ![](23.jpg)
+6.	Click the down-arrow ( ) icon beside a Connected IP to drill into additional reports, as well as pivot out for additional context for the host. This includes:
+
+	a.	IP Traffic: Displays an overview of network traffic the IP address has been involved in, including amounts of data, internal entities it connected to, and the ports used in communication
+	b.	Session Traffic: All network traffic related to the selected IP
+	c.	AbuseIPDB, Cisco Umbrella, Google Search, or Talos Intelligence: Pivot into external data stores for additional context about the host 
+	d.	Add IP to watchlist: Create a watchlist rule for the IP that will trigger an Alert when network activity is detected from it in the future
+	e.	Find IP on multiple days: View the amount of traffic and the number of connections this entity was involved with per day, over the past 30 days
+
+![](23.jpg)
 
 7.	Feel free to explore other Alerts triggered in the demo system.
+
 *NOTE: It is recommended that you investigate several different Alerts to get an idea of the kinds of Observations that can trigger an Alert, as well as the kind of information that is collected and analyzed by Stealthwatch Cloud as part of its operation.*
-
-
 
 # Scenario 3.	Cisco Stealthwatch Observations
 Observations are the building blocks of Alerts. An Observation is simply a fact about the traffic that was recorded. Stealthwatch Cloud has many different Observation types. 
@@ -191,20 +197,16 @@ An Alert is generated when combinations of observations represent a security con
   ![](25.jpg)
 
 4.	Beside each Observation’s name are two icons: 
-a.	Click the information ( ) icon to view a brief definition of the Observation, to supplement the explanation.
-b.	Click the right ( ) icon to view all Observations of the specified type. 
+	a.	Click the information ( ) icon to view a brief definition of the Observation, to supplement the explanation.
+	b.	Click the right ( ) icon to view all Observations of the specified type. 
 5.	Similar to interacting with Supported Observations in an Alert, Click the down-arrow ( ) icon beside IPs/device names to bring up contextual menus for each, allowing you to drill into additional collected information or pivot to other data sources for more context. 
 
-   ![](26.jpg)  ![](28.jpg)
+![](26.jpg)  ![](28.jpg)
 
 6.	Select the Types tab to display a list of all Observations that Stealthwatch Cloud can generate, as well as the number of these Observations made for the account.
-a.	Click the right ( ) icon to view all Observations of the specified type. 
+	a.	Click the right ( ) icon to view all Observations of the specified type. 
 
-  ![](29.jpg)
-
-
-
-
+	![](29.jpg)
 
 7.	Select the By Source tab to see the endpoints responsible for the highest number of detected Observations. 
 
@@ -212,6 +214,7 @@ a.	Click the right ( ) icon to view all Observations of the specified type.
 
 # Scenario 4.	Stealthwatch Cloud Models
 The Models tab contains several functions, such as reporting on endpoints, traffic, and subnets, or viewing detailed flow records query (Session Traffic). Portions of the reported endpoint and traffic information are presented on the initial Dashboard. For this section, we will look more closely at Roles.
+
 **Steps**
 1.	Select Models to see the various models aggregated by Stealthwatch Cloud.
 
@@ -232,10 +235,10 @@ The Models tab contains several functions, such as reporting on endpoints, traff
   ![](34.jpg)
 
 6.	Click the down-arrow ( ) icon beside a Source IP/Name to drill down into additional reports for that device. This includes:
-* a.	Alerts currently involving the selected device
-* b.	Observations involving the selected device
-* c.	Device information, which displays information about what is known about the selected device (see Device Models for more information)
-* d.	All Session Traffic related to the selected device
+	a.	Alerts currently involving the selected device
+	b.	Observations involving the selected device
+	c.	Device information, which displays information about what is known about the selected device (see Device Models for more information)
+	d.	All Session Traffic related to the selected device
 	Additionally, you can Copy the device IP or name into the clipboard for pasting elsewhere.
 
   ![](35.jpg)
@@ -274,24 +277,24 @@ The Device page lists the traffic details on a given day, including internal/ext
 # Scenario 6.	AWS Specific Instrumentation and Features
 Cisco Stealthwatch Cloud takes advance of AWS APIs and security features, and is able to pull data from additional AWS APIs like AWS CloudTrail to get additional context on the instances (servers) in the customer account.  Similar features are expected for Google Cloud and Microsoft Azure in future updates.
 
-AWS Instrumentation
-Select (  ) > Integrations to review what is needed to setup the integration with AWS. 
+**AWS Instrumentation**
+Select > Integrations to review what is needed to setup the integration with AWS. 
 
   ![](40.jpg)
 
 1.	To setup Stealthwatch Cloud to monitor an account, the following is required: 
-a.	Create a policy with the appropriate permissions, as detailed on the About tab for AWS.
+	a.	Create a policy with the appropriate permissions, as detailed on the About tab for AWS.
 
   ![](41.jpg)
 
-b.	Create a role (e.g. user) for Stealthwatch Cloud and link to the previously created policy.
-c.	Select the Credentials tab.
-d.	Enter the Role ARN (Amazon Resource Name) into the Stealthwatch portal.
+	b.	Create a role (e.g. user) for Stealthwatch Cloud and link to the previously created policy.
+	c.	Select the Credentials tab.
+	d.	Enter the Role ARN (Amazon Resource Name) into the Stealthwatch portal.
 
   ![](42.jpg)
 
-e.	Select the VPC Flow Logs tab.
-f.	Enter the Flow Log name in the CloudWatch Logs Group field, then click Add. The users should have VPC flow logs enabled in their account
+	e.	Select the VPC Flow Logs tab.
+	f.	Enter the Flow Log name in the CloudWatch Logs Group field, then click Add. The users should have VPC flow logs enabled in their account
 
   ![](43.jpg)
 
@@ -346,14 +349,14 @@ Labeling subnets is very useful, and recommended as a way to get added value out
   ![](49.jpg)
 
 3.	You have the following options to add subnets:
-a.	Click Add Subnet to manually add a subnet, or 
-b.	Click Upload CSV to import a properly formatted CSV file.
+	a.	Click Add Subnet to manually add a subnet, or 
+	b.	Click Upload CSV to import a properly formatted CSV file.
 *NOTE: The system provides more information on CSV format when you click Upload CSV.*
 
 4.	You can also define 3 attributes for a subnet:
-* a.	Sensitivity: The sensitivity of a subnet is directly related to an Alert’s sensitivity. For example, if a subnet is rated as low sensitivity, only high sensitivity Alerts will fire. If a subnet is rated as high sensitivity, low, normal, and high sensitivity Alerts will trigger. No sensitivity will keep any Alerts from triggering, and is generally not recommended.
-* b.	Static: Select this if the subnet range is primarily composed of static IP addresses. Stealthwatch Cloud will assume IPs in these ranges always belong to the same device.
-* c.	New Device Alerts: Select this to trigger an Alert if a new IP appears in the subnet range. Not recommended for DHCP ranges.  
+	a.	Sensitivity: The sensitivity of a subnet is directly related to an Alert’s sensitivity. For example, if a subnet is rated as low sensitivity, only high sensitivity Alerts will fire. If a subnet is rated as high sensitivity, low, normal, and high sensitivity Alerts will trigger. No sensitivity will keep any Alerts from triggering, and is generally not recommended.
+	b.	Static: Select this if the subnet range is primarily composed of static IP addresses. Stealthwatch Cloud will assume IPs in these ranges always belong to the same device.
+	c.	New Device Alerts: Select this to trigger an Alert if a new IP appears in the subnet range. Not recommended for DHCP ranges.  
 
 5.	Click Add Subnet to view the Add Subnet window. Here you can define the subnet details and description, as well as define the Alert Sensitivity for devices that appear in this subnet. 
 
@@ -364,15 +367,16 @@ b.	Click Upload CSV to import a properly formatted CSV file.
 7.	Select the Virtual Cloud Subnets tab.
 
 8.	The Virtual Cloud Subnets tab is populated automatically and can be used to verify proper configuration of your AWS integration settings. You can define two attributes for subnets listed here:
-* a.	Sensitivity: The sensitivity of a subnet is directly related to an Alert’s sensitivity. For example, if a subnet is rated as low sensitivity, only high sensitivity Alerts will fire. If a subnet is rated as high sensitivity, low and high sensitivity Alerts will trigger. No sensitivity will keep any Alerts from triggering, and is generally not recommended.
-* b.	New Device Alerts: Select this to trigger an Alert if a new IP appears in the subnet range. Not recommended for DHCP ranges.  
+	a.	Sensitivity: The sensitivity of a subnet is directly related to an Alert’s sensitivity. For example, if a subnet is rated as low sensitivity, only high sensitivity Alerts will fire. If a subnet is rated as high sensitivity, low and high sensitivity Alerts will trigger. No sensitivity will keep any Alerts from triggering, and is generally not recommended.
+	b.	New Device Alerts: Select this to trigger an Alert if a new IP appears in the subnet range. Not recommended for DHCP ranges.  
  
   ![](51.jpg)
 
 9.	You are done with this review.
 
-Alert Sensitivity
+**Alert Sensitivity**
 There is limited customization of alerts due to the entity modeling algorithms. You can adjust the sensitivity of the alerts (normal, low, high, none). The sensitivity of the alerts is directly related to the sensitivity of the subnet. For example, if a subnet is rated as low sensitivity, only high sensitivity Alerts will fire. If a subnet is rated as high sensitivity, low, normal and high sensitivity Alerts will trigger. No sensitivity will keep any Alerts from triggering, and is generally not recommended.
+
 **Steps**
 1.	Select (?) > Alert Types and Priorities.
 
@@ -382,8 +386,9 @@ There is limited customization of alerts due to the entity modeling algorithms. 
 
   ![](53.jpg)
 
-Watchlists/Internal Blacklist
+**Watchlists/Internal Blacklist**
 Custom alerts and blacklists can also be defined in Stealthwatch Cloud.
+
 **Steps**
 1.	Click > Alerts > Configure Watchlists to display the options available for Stealthwatch Cloud users to input their own watchlists (e.g. TOR) for additional visibility.
 
@@ -403,7 +408,8 @@ Custom alerts and blacklists can also be defined in Stealthwatch Cloud.
 
 # Scenario 8.	Alert Export Options
 Cisco Stealthwatch Cloud can export alerts to several popular tools like Spark, Slack, PagerDuty, etc. In addition, Amazon and Google have built in notification tools like SNS that can be used to deliver alerts. The on-premises virtual appliance also has the ability to generate SNMP or Syslog data and pass it to a local collector (e.g. SIEM).
-Services & Webhooks
+
+**Services & Webhooks**
 
 1.	Click ( ) > Services/Webhooks to view all current supported integrations.
 
