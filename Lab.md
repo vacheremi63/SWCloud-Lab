@@ -89,7 +89,7 @@ The 60-plus built-in alerts each have a default sensitivity level that can be ad
  
 	a.	Status: the alert’s workflow status assigned by users, including: 
 
- ![](14.jpg =100x20)
+ ![](14.jpg =250x)
 
 		i.	All: Display all Alerts triggered in your environment, regardless of status.
 
