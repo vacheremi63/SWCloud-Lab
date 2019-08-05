@@ -1,4 +1,4 @@
-## Cisco Stealthwatch Cloud Demo 
+### Cisco Stealthwatch Cloud Demo 
 
 
 Cisco Stealthwatch Cloud provides comprehensive network visibility and security threat detection from the datacenter to the cloud. It is composed of two products: PCM (Public Cloud Monitoring) and PNM (Private Network Monitoring). Cisco Stealthwatch Cloud is primarily different from Stealthwatch Enterprise in that it is a SaaS service leveraging the public cloud for analytics, storage, and  portal access. Both products are based on using collected network telemetry to provide visibility into advanced threats by identifying suspicious patterns of traffic and host behavior deviations.
@@ -469,7 +469,7 @@ Custom alerts and blacklists can also be defined in Stealthwatch Cloud.
 2.	The IPs and Domains tab allows you to enter domains and IPs to generate Alerts when activity is detected between them and internal devices.
 
   ![](55.jpg)
-  
+
  
 3.	The Third Party Watchlists tab allows you to define custom watchlists to monitor against.
 
