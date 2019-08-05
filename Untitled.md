@@ -176,10 +176,15 @@ Supporting Observations for an Alert contain a lot of useful data to drill into.
 6.	Click the down-arrow ( ) icon beside a Connected IP to drill into additional reports, as well as pivot out for additional context for the host. This includes:
 
 	a.	IP Traffic: Displays an overview of network traffic the IP address has been involved in, including amounts of data, internal entities it connected to, and the ports used in communication
+
 	b.	Session Traffic: All network traffic related to the selected IP
+
 	c.	AbuseIPDB, Cisco Umbrella, Google Search, or Talos Intelligence: Pivot into external data stores for additional context about the host 
+
 	d.	Add IP to watchlist: Create a watchlist rule for the IP that will trigger an Alert when network activity is detected from it in the future
+
 	e.	Find IP on multiple days: View the amount of traffic and the number of connections this entity was involved with per day, over the past 30 days
+
 
 ![](23.jpg)
 
@@ -191,12 +196,15 @@ Supporting Observations for an Alert contain a lot of useful data to drill into.
 Observations are the building blocks of Alerts. An Observation is simply a fact about the traffic that was recorded. Stealthwatch Cloud has many different Observation types. 
 The vast majority of Observations are NOT attached to an Alert. Observations are not, by default, bad. They are neutral on their own but can be indicative of bad behavior; if so, the triggered Alert will reference the concerning Observation. For example, a new high-throughput connection to an Akamai stream server is not necessarily relevant to security and will only be noted. However, a new or persistent high-throughput connection to a known or suspected Command & Control server would be. 
 An Alert is generated when combinations of observations represent a security concern.
+
 **Steps**
+
 1.	Click Observations to access the page.
 
    ![](24.jpg)
 
 2.	You are shown a list of Observations made by Stealthwatch Cloud about the deployment. Isolated Observations aren't security threats - just records of activity considered remarkable by Stealthwatch Cloud’s entity models and algorithms. 
+
 3.	The Recent Highlights tab displays recent Observations of interesting behaviors for review.
 
   ![](25.jpg)
@@ -254,35 +262,44 @@ The Models tab contains several functions, such as reporting on endpoints, traff
 
 # Scenario 5.	Device Models
 The Device page lists the traffic details on a given day, including internal/external connections, byte counts, open alerts and observations for the Device, the auto-identified role, and traffic profiles. Every internal listed IP in Stealthwatch Cloud has a device model page that can be used to view historical behavior data.
-****Steps****
+
+**Steps**
+
 1.	Select Dashboard > Dashboard to return to the main Dashboard.
 
   ![](36.jpg)
 
 2.	From the Open Alerts section of the Dashboard, click the down-arrow ( ) icon beside a device, then select Device to go to the device page.
+
 *NOTE: Selected any listed device, as the device list varies.*
 
   ![](37.jpg)
 
 3.	Every device/host is tracked and modeled, which is the baseline used to track behavior and detect deviations relevant to security. The Device page displays a trend graph showing an overview of the past month of Connections, and data transfer to and from the device.
+
 4.	Connection-, Traffic-, Alerting-, Role- and Profile-related information is displayed on the Summary tab, as well as any imported AWS tagging information (if applicable).
 
   ![](38.jpg)
 
 5.	In addition to the summarized data collected for the device, select the Traffic tab to investigate traffic details.
+
 6.	Click Previous Day and Next Day to cycle through individual days. 
+
 7.	Select All, Internal, External, or New to filter traffic with more precision.
+
 8.	Click CSV to all collected Traffic information in CSV format.
 
   ![](39.jpg)
 
 9.	An overview of all connections based on type can be found on the Profiling tab.
+
 10.	All recorded DNS requests and what they resolved to can be found on the DNS tab. This tab is empty if you only collect NetFlow data.
 
 # Scenario 6.	AWS Specific Instrumentation and Features
 Cisco Stealthwatch Cloud takes advance of AWS APIs and security features, and is able to pull data from additional AWS APIs like AWS CloudTrail to get additional context on the instances (servers) in the customer account.  Similar features are expected for Google Cloud and Microsoft Azure in future updates.
 
 **AWS Instrumentation**
+
 Select > Integrations to review what is needed to setup the integration with AWS. 
 
   ![](40.jpg)
@@ -354,13 +371,18 @@ Labeling subnets is very useful, and recommended as a way to get added value out
   ![](49.jpg)
 
 3.	You have the following options to add subnets:
+
 	a.	Click Add Subnet to manually add a subnet, or 
 	b.	Click Upload CSV to import a properly formatted CSV file.
+
 *NOTE: The system provides more information on CSV format when you click Upload CSV.*
 
 4.	You can also define 3 attributes for a subnet:
+
 	a.	Sensitivity: The sensitivity of a subnet is directly related to an Alert’s sensitivity. For example, if a subnet is rated as low sensitivity, only high sensitivity Alerts will fire. If a subnet is rated as high sensitivity, low, normal, and high sensitivity Alerts will trigger. No sensitivity will keep any Alerts from triggering, and is generally not recommended.
+
 	b.	Static: Select this if the subnet range is primarily composed of static IP addresses. Stealthwatch Cloud will assume IPs in these ranges always belong to the same device.
+
 	c.	New Device Alerts: Select this to trigger an Alert if a new IP appears in the subnet range. Not recommended for DHCP ranges.  
 
 5.	Click Add Subnet to view the Add Subnet window. Here you can define the subnet details and description, as well as define the Alert Sensitivity for devices that appear in this subnet. 
@@ -372,7 +394,9 @@ Labeling subnets is very useful, and recommended as a way to get added value out
 7.	Select the Virtual Cloud Subnets tab.
 
 8.	The Virtual Cloud Subnets tab is populated automatically and can be used to verify proper configuration of your AWS integration settings. You can define two attributes for subnets listed here:
+
 	a.	Sensitivity: The sensitivity of a subnet is directly related to an Alert’s sensitivity. For example, if a subnet is rated as low sensitivity, only high sensitivity Alerts will fire. If a subnet is rated as high sensitivity, low and high sensitivity Alerts will trigger. No sensitivity will keep any Alerts from triggering, and is generally not recommended.
+
 	b.	New Device Alerts: Select this to trigger an Alert if a new IP appears in the subnet range. Not recommended for DHCP ranges.  
  
   ![](51.jpg)
@@ -380,9 +404,11 @@ Labeling subnets is very useful, and recommended as a way to get added value out
 9.	You are done with this review.
 
 **Alert Sensitivity**
+
 There is limited customization of alerts due to the entity modeling algorithms. You can adjust the sensitivity of the alerts (normal, low, high, none). The sensitivity of the alerts is directly related to the sensitivity of the subnet. For example, if a subnet is rated as low sensitivity, only high sensitivity Alerts will fire. If a subnet is rated as high sensitivity, low, normal and high sensitivity Alerts will trigger. No sensitivity will keep any Alerts from triggering, and is generally not recommended.
 
 **Steps**
+
 1.	Select (?) > Alert Types and Priorities.
 
   ![](52.jpg)
@@ -392,9 +418,11 @@ There is limited customization of alerts due to the entity modeling algorithms. 
   ![](53.jpg)
 
 **Watchlists/Internal Blacklist**
+
 Custom alerts and blacklists can also be defined in Stealthwatch Cloud.
 
 **Steps**
+
 1.	Click > Alerts > Configure Watchlists to display the options available for Stealthwatch Cloud users to input their own watchlists (e.g. TOR) for additional visibility.
 
   ![](54.jpg)
@@ -412,6 +440,7 @@ Custom alerts and blacklists can also be defined in Stealthwatch Cloud.
   ![](57.jpg)
 
 # Scenario 8.	Alert Export Options
+
 Cisco Stealthwatch Cloud can export alerts to several popular tools like Spark, Slack, PagerDuty, etc. In addition, Amazon and Google have built in notification tools like SNS that can be used to deliver alerts. The on-premises virtual appliance also has the ability to generate SNMP or Syslog data and pass it to a local collector (e.g. SIEM).
 
 **Services & Webhooks**
