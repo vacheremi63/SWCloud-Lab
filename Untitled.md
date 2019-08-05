@@ -121,15 +121,15 @@ NOTE: The current Open Alerts displayed here will vary. We will be covering how 
   ![](19.jpg)
 
 7.	The Alert details screen displays the Name of the Alert and the associated device name/IP address. Other information provided includes:
-a.	Status: Current Status of the Alert (Open or Closed).
-b.	ID: Identification number of the Alert.  This is an incrementing number based on all triggered Alerts.
-c.	Description: A description of the alert explaining what it means and why it is important.
-d.	Updated: When the Alert most recently had activity related to it occur
-e.	Created: When the Alert was first triggered.
-f.	The IP addresses of all observed entities involved in the alert.
-g.	Hostnames of the entities when the Alert triggered (if applicable/known).
-h.	Assignee: Who the alert is assigned to. Useful for triage and tracking.
-i.	Tags: The custom tags currently associated with an alert. This also allows you to assign custom tags to an alert for organization and tracking purposes.
+* a.	Status: Current Status of the Alert (Open or Closed).
+* b.	ID: Identification number of the Alert.  This is an incrementing number based on all triggered Alerts.
+* c.	Description: A description of the alert explaining what it means and why it is important.
+* d.	Updated: When the Alert most recently had activity related to it occur
+* e.	Created: When the Alert was first triggered.
+* f.	The IP addresses of all observed entities involved in the alert.
+* g.	Hostnames of the entities when the Alert triggered (if applicable/known).
+* h.	Assignee: Who the alert is assigned to. Useful for triage and tracking.
+* i.	Tags: The custom tags currently associated with an alert. This also allows you to assign custom tags to an alert for organization and tracking purposes.
 
 
 8.	Supporting Observations: All Alerts are based on Observations. These are the related activities that caused the alert to trigger. Depending on the type of Alert, there can be multiple kinds of Observations listed here. The associated table for each observation displays the connection details for the activity. 
@@ -232,10 +232,10 @@ NOTE: Stealthwatch Cloud observes endpoint behavior as part of the entity modeli
   ![](34.jpg)
 
 6.	Click the down-arrow ( ) icon beside a Source IP/Name to drill down into additional reports for that device. This includes:
-a.	Alerts currently involving the selected device
-b.	Observations involving the selected device
-c.	Device information, which displays information about what is known about the selected device (see Device Models for more information)
-d.	All Session Traffic related to the selected device
+* a.	Alerts currently involving the selected device
+* b.	Observations involving the selected device
+* c.	Device information, which displays information about what is known about the selected device (see Device Models for more information)
+* d.	All Session Traffic related to the selected device
 	Additionally, you can Copy the device IP or name into the clipboard for pasting elsewhere.
 
   ![](35.jpg)
@@ -351,9 +351,9 @@ b.	Click Upload CSV to import a properly formatted CSV file.
 NOTE: The system provides more information on CSV format when you click Upload CSV.
 
 4.	You can also define 3 attributes for a subnet:
-a.	Sensitivity: The sensitivity of a subnet is directly related to an Alert’s sensitivity. For example, if a subnet is rated as low sensitivity, only high sensitivity Alerts will fire. If a subnet is rated as high sensitivity, low, normal, and high sensitivity Alerts will trigger. No sensitivity will keep any Alerts from triggering, and is generally not recommended.
-b.	Static: Select this if the subnet range is primarily composed of static IP addresses. Stealthwatch Cloud will assume IPs in these ranges always belong to the same device.
-c.	New Device Alerts: Select this to trigger an Alert if a new IP appears in the subnet range. Not recommended for DHCP ranges.  
+* a.	Sensitivity: The sensitivity of a subnet is directly related to an Alert’s sensitivity. For example, if a subnet is rated as low sensitivity, only high sensitivity Alerts will fire. If a subnet is rated as high sensitivity, low, normal, and high sensitivity Alerts will trigger. No sensitivity will keep any Alerts from triggering, and is generally not recommended.
+* b.	Static: Select this if the subnet range is primarily composed of static IP addresses. Stealthwatch Cloud will assume IPs in these ranges always belong to the same device.
+* c.	New Device Alerts: Select this to trigger an Alert if a new IP appears in the subnet range. Not recommended for DHCP ranges.  
 
 5.	Click Add Subnet to view the Add Subnet window. Here you can define the subnet details and description, as well as define the Alert Sensitivity for devices that appear in this subnet. 
 
@@ -364,8 +364,8 @@ c.	New Device Alerts: Select this to trigger an Alert if a new IP appears in the
 7.	Select the Virtual Cloud Subnets tab.
 
 8.	The Virtual Cloud Subnets tab is populated automatically and can be used to verify proper configuration of your AWS integration settings. You can define two attributes for subnets listed here:
-a.	Sensitivity: The sensitivity of a subnet is directly related to an Alert’s sensitivity. For example, if a subnet is rated as low sensitivity, only high sensitivity Alerts will fire. If a subnet is rated as high sensitivity, low and high sensitivity Alerts will trigger. No sensitivity will keep any Alerts from triggering, and is generally not recommended.
-b.	New Device Alerts: Select this to trigger an Alert if a new IP appears in the subnet range. Not recommended for DHCP ranges.  
+* a.	Sensitivity: The sensitivity of a subnet is directly related to an Alert’s sensitivity. For example, if a subnet is rated as low sensitivity, only high sensitivity Alerts will fire. If a subnet is rated as high sensitivity, low and high sensitivity Alerts will trigger. No sensitivity will keep any Alerts from triggering, and is generally not recommended.
+* b.	New Device Alerts: Select this to trigger an Alert if a new IP appears in the subnet range. Not recommended for DHCP ranges.  
  
   ![](51.jpg)
 
