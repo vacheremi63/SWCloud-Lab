@@ -89,17 +89,18 @@ The 60-plus built-in alerts each have a default sensitivity level that can be ad
 3.	You can filter and sort displayed Alerts by different criteria. 
  
 	a.	Status: the alert’s workflow status assigned by users, including: 
+
     <img src="14.jpg" width="300" height="150" />
     
-    *All: Display all Alerts triggered in your environment, regardless of status.
+    *   All: Display all Alerts triggered in your environment, regardless of status.
 
     <img src="15.jpg" width="150" height="150" />
 
-	*Open: Display all currently triggered Alerts that have not been closed or snoozed.
+	*   Open: Display all currently triggered Alerts that have not been closed or snoozed.
 
-	*Closed: Display Alerts that have been closed by users. If the same behavior is detected again, the alert will most likely trigger again.
+	*   Closed: Display Alerts that have been closed by users. If the same behavior is detected again, the alert will most likely trigger again.
 
-	*Snoozed: Display Alerts “silenced” by users. When snooze is selected, the user specifies a period of time for snoozing.  When the snooze period expires, the alert could trigger again.
+	*   Snoozed: Display Alerts “silenced” by users. When snooze is selected, the user specifies a period of time for snoozing.  When the snooze period expires, the alert could trigger again.
  
 	b.	Tags: View Alerts with custom descriptions that you create to track and organize Alerts.
 
