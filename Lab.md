@@ -29,13 +29,14 @@ The Stealthwatch Cloud Portal is your entry point to Stealthwatch Cloud, and is 
 
  
 2.	On the Dashboard home page, you will see:
-	a.	The most recent open Alerts raised by Stealthwatch Cloud:
 
-![](Picture2.jpg)
+	a.	The most recent open Alerts raised by Stealthwatch Cloud:
+    
+    ![](Picture2.jpg)
 
 *NOTE: The Alerts displayed on the dashboard will vary based on occurring activity in the demo environment.*
 
-	b.	The past 30 days’ worth of total endpoint counts for all deployed sensors connected to the account. 
+    b.	The past 30 days’ worth of total endpoint counts for all deployed sensors connected to the account. 
 
  ![](Picture3.jpg)
 
