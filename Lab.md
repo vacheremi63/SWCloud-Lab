@@ -72,12 +72,14 @@ Stealthwatch Cloud has over 60 built-in alerts. Alerts gradually enable during t
 The 60-plus built-in alerts each have a default sensitivity level that can be adjusted by the user. Changing the sensitivity to a higher level will allow more of those alert types to fire. Users are not able to change the underlying detection for the alert. This is built into the Stealthwatch Cloud analytics engine. 
 
 **Steps**
+
 1.	The Stealthwatch Cloud dashboard displays the most recently triggered alerts. Select Alerts to view ALL open Alerts.
 
  ![](12.jpg)
 
   
 2.	A list of all current Open alerts is displayed.
+
 *NOTE: The alerts in dCloud are dynamic and some of the underlying flow data may age out over time.  Alerts are never deleted.*
 
  ![](13.jpg)
@@ -115,6 +117,7 @@ The 60-plus built-in alerts each have a default sensitivity level that can be ad
 4.	For this exercise, make sure the Alerts list displays only Open Alerts, sorted by Newest. 
 
 5.	Select one of the top alerts displayed on the screen, and click it.
+
 *NOTE: The current Open Alerts displayed here will vary. We will be covering how to read and interact with Alerts in general, so any selection will do.*
 
 6.	The details screen will open for the selected Alert.
@@ -122,14 +125,23 @@ The 60-plus built-in alerts each have a default sensitivity level that can be ad
   ![](19.jpg)
 
 7.	The Alert details screen displays the Name of the Alert and the associated device name/IP address. Other information provided includes:
+
 	a.	Status: Current Status of the Alert (Open or Closed).
+
 	b.	ID: Identification number of the Alert.  This is an incrementing number based on all triggered Alerts.
+
 	c.	Description: A description of the alert explaining what it means and why it is important.
+
 	d.	Updated: When the Alert most recently had activity related to it occur
+
 	e.	Created: When the Alert was first triggered.
+
 	f.	The IP addresses of all observed entities involved in the alert.
+
 	g.	Hostnames of the entities when the Alert triggered (if applicable/known).
+
 	h.	Assignee: Who the alert is assigned to. Useful for triage and tracking.
+
 	i.	Tags: The custom tags currently associated with an alert. This also allows you to assign custom tags to an alert for organization and tracking purposes.
 
 
@@ -145,7 +157,9 @@ The 60-plus built-in alerts each have a default sensitivity level that can be ad
 Supporting Observations for an Alert contain a lot of useful data to drill into. The information presented will vary based on the kind of Observation, but in general there will be Source and Connected IP information displayed, as well as the Time the observation was registered. Other relevant details about the activity are displayed as well.  Note the connected IP is not always the source; Stealthwatch Cloud does not make that distinction.
 
 1.	X records per page specifies the number of Observations you would like to display at once.
+
 2.	The Search field:  Allows you to search for something in the specific lists of Observations.  In this example, you could filter on all SSH Server profiles by typing it into the box.
+
 3.	CSV: Allows you to export all Observations in the table as a .CSV formatted file.
 
  ![](20.jpg)
@@ -194,6 +208,7 @@ Supporting Observations for an Alert contain a lot of useful data to drill into.
 *NOTE: It is recommended that you investigate several different Alerts to get an idea of the kinds of Observations that can trigger an Alert, as well as the kind of information that is collected and analyzed by Stealthwatch Cloud as part of its operation.*
 
 # Scenario 3.	Cisco Stealthwatch Observations
+
 Observations are the building blocks of Alerts. An Observation is simply a fact about the traffic that was recorded. Stealthwatch Cloud has many different Observation types. 
 The vast majority of Observations are NOT attached to an Alert. Observations are not, by default, bad. They are neutral on their own but can be indicative of bad behavior; if so, the triggered Alert will reference the concerning Observation. For example, a new high-throughput connection to an Akamai stream server is not necessarily relevant to security and will only be noted. However, a new or persistent high-throughput connection to a known or suspected Command & Control server would be. 
 An Alert is generated when combinations of observations represent a security concern.
@@ -211,13 +226,17 @@ An Alert is generated when combinations of observations represent a security con
   ![](25.jpg)
 
 4.	Beside each Observation’s name are two icons: 
-	a.	Click the information ( ) icon to view a brief definition of the Observation, to supplement the explanation.
-	b.	Click the right ( ) icon to view all Observations of the specified type. 
+
+	a.	Click the information icon to view a brief definition of the Observation, to supplement the explanation.
+
+	b.	Click the right icon to view all Observations of the specified type. 
+
 5.	Similar to interacting with Supported Observations in an Alert, Click the down-arrow ( ) icon beside IPs/device names to bring up contextual menus for each, allowing you to drill into additional collected information or pivot to other data sources for more context. 
 
 ![](26.jpg)  ![](28.jpg)
 
 6.	Select the Types tab to display a list of all Observations that Stealthwatch Cloud can generate, as well as the number of these Observations made for the account.
+
 	a.	Click the right ( ) icon to view all Observations of the specified type. 
 
 	![](29.jpg)
@@ -227,6 +246,7 @@ An Alert is generated when combinations of observations represent a security con
   ![](30.jpg)
 
 # Scenario 4.	Stealthwatch Cloud Models
+
 The Models tab contains several functions, such as reporting on endpoints, traffic, and subnets, or viewing detailed flow records query (Session Traffic). Portions of the reported endpoint and traffic information are presented on the initial Dashboard. For this section, we will look more closely at Roles.
 
 **Steps**
@@ -239,7 +259,9 @@ The Models tab contains several functions, such as reporting on endpoints, traff
   ![](32.jpg)
 
 3.	This displays a mix of typical LAN devices such as DNS, database servers, and Domain Controllers, as well as Amazon Resources & Instances (AWS EC2 Instance). 
+
 *NOTE: Stealthwatch Cloud observes endpoint behavior as part of the entity modeling process to determine roles.*
+
 4.	Click the plus (+) icon beside a listed role to see all devices on the network identified for the given role.
 
   ![](33.jpg)
@@ -249,10 +271,15 @@ The Models tab contains several functions, such as reporting on endpoints, traff
   ![](34.jpg)
 
 6.	Click the down-arrow ( ) icon beside a Source IP/Name to drill down into additional reports for that device. This includes:
+
 	a.	Alerts currently involving the selected device
+
 	b.	Observations involving the selected device
+
 	c.	Device information, which displays information about what is known about the selected device (see Device Models for more information)
+
 	d.	All Session Traffic related to the selected device
+
 	Additionally, you can Copy the device IP or name into the clipboard for pasting elsewhere.
 
   ![](35.jpg)
@@ -260,8 +287,8 @@ The Models tab contains several functions, such as reporting on endpoints, traff
 7.	Feel free to explore other detected roles and the devices associated with them.
 
 
-
 # Scenario 5.	Device Models
+
 The Device page lists the traffic details on a given day, including internal/external connections, byte counts, open alerts and observations for the Device, the auto-identified role, and traffic profiles. Every internal listed IP in Stealthwatch Cloud has a device model page that can be used to view historical behavior data.
 
 **Steps**
@@ -297,6 +324,7 @@ The Device page lists the traffic details on a given day, including internal/ext
 10.	All recorded DNS requests and what they resolved to can be found on the DNS tab. This tab is empty if you only collect NetFlow data.
 
 # Scenario 6.	AWS Specific Instrumentation and Features
+
 Cisco Stealthwatch Cloud takes advance of AWS APIs and security features, and is able to pull data from additional AWS APIs like AWS CloudTrail to get additional context on the instances (servers) in the customer account.  Similar features are expected for Google Cloud and Microsoft Azure in future updates.
 
 **AWS Instrumentation**
@@ -306,17 +334,21 @@ Select > Integrations to review what is needed to setup the integration with AWS
   ![](40.jpg)
 
 1.	To setup Stealthwatch Cloud to monitor an account, the following is required: 
+
 	a.	Create a policy with the appropriate permissions, as detailed on the About tab for AWS.
 
   ![](41.jpg)
 
 	b.	Create a role (e.g. user) for Stealthwatch Cloud and link to the previously created policy.
+
 	c.	Select the Credentials tab.
+
 	d.	Enter the Role ARN (Amazon Resource Name) into the Stealthwatch portal.
 
   ![](42.jpg)
 
 	e.	Select the VPC Flow Logs tab.
+
 	f.	Enter the Flow Log name in the CloudWatch Logs Group field, then click Add. The users should have VPC flow logs enabled in their account
 
   ![](43.jpg)
@@ -332,6 +364,7 @@ Select > Integrations to review what is needed to setup the integration with AWS
 5.	Cisco Stealthwatch Cloud can initiate AWS Inspector assessments and pull any generating alerts into the Cisco Stealthwatch Cloud portal by defining them on the Inspector tab. Amazon Inspector is an automated security assessment service that helps improve the security and compliance of applications deployed on AWS. Amazon Inspector automatically assesses applications for vulnerabilities or deviations from best practices. After performing an assessment, Amazon Inspector produces a detailed list of security findings prioritized by level of severity.
  
 # AWS Specific Alerts
+
 *	AWS Config Rule Violation | Normal priority – An AWS Config rule was violated. This alert requires 0 days of history.
 *	AWS Console Login Failures | Normal priority – A user tried and failed to log in to the AWS Console several times. This alert requires 0 days of history.
 *	AWS Inspector Finding | Normal priority – AWS Inspector reported a high-severity finding for the device. This alert requires 0 days of history.
@@ -348,7 +381,9 @@ Select > Integrations to review what is needed to setup the integration with AWS
 *	Permissive AWS Security Group Created | Normal priority – A new AWS security group has been created that allows access from any host on unsafe ports. This alert requires 0 days of history.
 *	Unused AWS Resource | Normal priority – No recent activity has been seen for this AWS resource. This alert requires 14 days of history.
 CloudTrail Watchlist 
+
 When an action is performed in the customer AWS environment it is recorded in the CloudTrail API. All CloudTrail records are published in the CloudTrail observation.  View them by selecting Observations > Types > AWS CloudTrail Event Observation.
+
 For example, when a new network interface is created, modified, or deleted, it will be recorded in the CloudTrail. 
 You can build watchlists for any specific actions you want to be notified about. This functionality can be accessed on the Alerts tab.
 
@@ -359,9 +394,11 @@ You can build watchlists for any specific actions you want to be notified about.
 
 
 # Scenario 7.	Alert Customization
+
 Alert customization is not required for the service to work but can be used to achieve better alert-to-noise ratio or for customization.
 Descriptive Subnet Input 
 Labeling subnets is very useful, and recommended as a way to get added value out of the monitoring and alerts Stealthwatch Cloud provides. AWS and Google Cloud subnet info is automatically imported when integrated with Stealthwatch Cloud.
+
 **Steps**
 1.	Select (  ) > Subnets.
 
@@ -374,6 +411,7 @@ Labeling subnets is very useful, and recommended as a way to get added value out
 3.	You have the following options to add subnets:
 
 	a.	Click Add Subnet to manually add a subnet, or 
+
 	b.	Click Upload CSV to import a properly formatted CSV file.
 
 *NOTE: The system provides more information on CSV format when you click Upload CSV.*
@@ -431,6 +469,7 @@ Custom alerts and blacklists can also be defined in Stealthwatch Cloud.
 2.	The IPs and Domains tab allows you to enter domains and IPs to generate Alerts when activity is detected between them and internal devices.
 
   ![](55.jpg)
+  
  
 3.	The Third Party Watchlists tab allows you to define custom watchlists to monitor against.
 
@@ -458,7 +497,8 @@ The following screenshot shows an example of a Slack Integration alert:
 
  ![](60.jpg)
  
-Syslog or SNMP
+**Syslog or SNMP**
+
 1.	Select the Sensors tab to access Syslog and SNMP configuration options based on the individual sensors.
 
   ![](61.jpg)
