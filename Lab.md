@@ -32,6 +32,7 @@ The Stealthwatch Cloud Portal is your entry point to Stealthwatch Cloud, and is 
  
 2.	On the Dashboard home page, you will see:
 
+
 	a.	The most recent open Alerts raised by Stealthwatch Cloud:
     
     ![](Picture2.jpg)
@@ -45,8 +46,6 @@ The Stealthwatch Cloud Portal is your entry point to Stealthwatch Cloud, and is 
 	c.	The traffic summary for all endpoints for last 24 hours, and sources of that traffic:
 
     ![](Picture6.jpg)
-
-
  
 3.	Select the cloud Icon (![](Picture7.jpg)) to see all sensors that are active for this portal, Sensor can be on-premises, collecting flows from switches and routers, or API integrations with cloud providers like AWS.  Different functionality is available for the various sensor types.  The on-premises sensor allows you to configure flow input type, Syslog output, name, etc.  The cloud integrations do not have these fields as they are using the respective API.
 
@@ -91,11 +90,11 @@ The 60-plus built-in alerts each have a default sensitivity level that can be ad
  
 	a.	Status: the alert’s workflow status assigned by users, including: 
 
- <img src="14.jpg" width="300" height="150" />
+    <img src="14.jpg" width="300" height="150" />
 
 		i.	All: Display all Alerts triggered in your environment, regardless of status.
 
- <img src="15.jpg" width="300" height="150" />
+        <img src="15.jpg" width="300" height="150" />
 
 		ii.	Open: Display all currently triggered Alerts that have not been closed or snoozed.
 
@@ -105,15 +104,15 @@ The 60-plus built-in alerts each have a default sensitivity level that can be ad
  
 	b.	Tags: View Alerts with custom descriptions that you create to track and organize Alerts.
 
-  ![](16.jpg)
+    ![](16.jpg)
 
 	c.	Assignee: View Alerts assigned to the specified user for investigation/remediation.
 
-  ![](17.jpg)
+    ![](17.jpg)
 
 	d.	Sort: View the selected alerts by newest, oldest, type, or source of Alert.
 
- ![](18.jpg)
+    ![](18.jpg)
 
  
 4.	For this exercise, make sure the Alerts list displays only Open Alerts, sorted by Newest. 
