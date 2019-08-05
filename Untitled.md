@@ -140,6 +140,7 @@ The 60-plus built-in alerts each have a default sensitivity level that can be ad
 10.	Comments: Allows you to enter any related or relevant comments or information about the Alert, as well as provides updates about when additional related Observations are added.
 
 **Interacting with Supporting Observations**
+
 Supporting Observations for an Alert contain a lot of useful data to drill into. The information presented will vary based on the kind of Observation, but in general there will be Source and Connected IP information displayed, as well as the Time the observation was registered. Other relevant details about the activity are displayed as well.  Note the connected IP is not always the source; Stealthwatch Cloud does not make that distinction.
 
 1.	X records per page specifies the number of Observations you would like to display at once.
@@ -157,10 +158,15 @@ Supporting Observations for an Alert contain a lot of useful data to drill into.
 *NOTE: You can return to the alarm you selected by clicking Back in your browser.*
 
 5.	Click the down-arrow ( ) icon beside a Source IP/Name to drill down into additional reports for that device. This includes:
+
 	a.	Alerts currently involving the selected device
+
 	b.	Observations involving the selected device
+
 	c.	Device information, which displays information about what is known about the selected device (see Device Models for more information)
+
 	d.	All Session Traffic related to the selected device
+
 	Additionally, you can Copy the device IP or name into the clipboard for pasting elsewhere.
 
 ![](22.jpg)
